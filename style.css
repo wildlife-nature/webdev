@@ -1,0 +1,101 @@
+/* TEXT EFFECTS IN CSS3 */
+.text_effects{
+    text-shadow: 2px 4px 5px blueviolet;
+   
+}
+
+@font-face{
+    font-family: spanish;
+    src: url('Mayan.ttf');
+}
+.font_heading{
+    font-family: spanish;
+}
+
+.running{
+    width: 100%; height: 100%; 
+    position:relative;
+    /* background-color: burlywood; */
+    animation-name: run;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+ .running img{
+    width: 140px; height: 120px;
+    position: relative;
+    left: 0;
+    top:0;
+}
+@keyframes run{
+    from{
+        left: 0%
+    }
+    to{
+        left: 85%
+    }
+}
+.running_car {
+    width: 100%; height: 100%; 
+    position:relative;
+    /* background-image: url('road.jpg'); */
+    animation-name: car_img;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.running_car img{
+    width: 180px; height: 120px;
+    /* position: relative; */
+    left: 0;
+    top:-15px;
+}
+ @keyframes car_img{
+    0%{
+        left: 0
+    }
+    100%{
+        left: 100%
+    }
+} 
+
+/* TRANSITION IN CCSS3 */
+
+.love_img,.laptop{
+    width: 100px; height: 100px;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+.love_img:hover{
+    width: 200px; height: 200px;
+    /* transform: scale(2, 2) */
+}
+.laptop:hover{
+    width: 200px; height: 200px;
+    /* transform: scale(2, 2) */
+}
+
+
+/* BORDERS IN CSS */
+.img-fluid{
+    border-radius: 50px;
+
+}
+.card{
+    box-shadow: 4px 4px 5px 5px rgb(235, 108, 235);
+}
+
+/* TRANSFORM IN CSS3 */
+.text_effects:hover{
+    transform: rotate(360deg);
+}
+
+/* LINEAR GRADIENT */
+
+.join_gradient{
+    background-image: linear-gradient(to left, pink, blue);
+}
+.join_gradient_car{
+    background-image: linear-gradient(to left, yellow,green);
+}
